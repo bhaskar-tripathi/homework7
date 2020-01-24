@@ -136,6 +136,7 @@ function generateHTML(data) {
            padding: 50px;
            padding-left: 100px;
            padding-right: 100px;
+           text-align: center;
            }
   
            .row {
@@ -170,7 +171,49 @@ function generateHTML(data) {
               zoom: .75; 
             } 
            }
-        </style>`
+        </style>
+        </head>
+
+<body>
+    <div class="wrapper">
+        <div class="photo-header">
+           <image src=${data.profileImg}/>
+           <h1> Hi! </h1>
+           <h2> My name is ${data.name} </h2>
+           <h4> Currently @ ${data.company}</h4>
+           <div class="links-nav"> 
+              <div class="nav-link"> <a href="http://maps.google.com/?q=${data.location}"><i class="fas fa-location-arrow"></i> ${data.location}</a> </div>
+              <div class="nav-link"> <a href="${data.profile}"><i class="fab fa-github-alt"></i> Github </a> </div>
+              <div class="nav-link"> <a href="${data.blog}"><i class="fas fa-rss"></i> Blog </a> </div>
+           </div>
+        </div>        
+        
+        <main>          
+          <div class="container">
+            <h3> ${data.bio} </h3>
+            <div class="row">
+              <div class="col">
+                <div class="card"> <h3> Public Repositories </h3> <h3>${data.numRepos}</h3> </div>
+              </div>
+              <div class="col">
+                <div class="card"> <h3> Followers </h3> <h3>${data.numFollowers}</h3> </div>
+              </div>                
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card"> <h3> Github Stars </h3> <h3>${data.numGitstats}</h3> </div>
+              </div>
+              <div class="col">
+                <div class="card"> <h3> Following </h3> <h3>${data.numFollowing}</h3> </div>
+              </div>
+            </div>
+          </div>
+        </main>        
+    </div>    
+</body>
+
+</html>        
+        `
 }
 
 module.exports = {

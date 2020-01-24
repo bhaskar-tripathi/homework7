@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/bhaskar-tripathi/homework7/issues"
   },
-  "homepage": "https://github.com/bhaskar-tripathi/homework7#readme"
+  "homepage": "https://github.com/bhaskar-tripathi/homework7#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "html-pdf": "^2.2.0",
+    "inquirer": "^7.0.3"
+  }
 }
