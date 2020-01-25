@@ -109,7 +109,7 @@ function generateHTML(data) {
            border: 6px solid ${colors[data.color].photoBorderColor};
            box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
            }
-           .photo-header h1, .photo-header h2 {
+           .photo-header h1, .photo-header h2 .photo-header h4 {
            width: 100%;
            text-align: center;
            }
@@ -179,7 +179,7 @@ function generateHTML(data) {
         <div class="photo-header">
            <image src=${data.profileImg}/>
            <h1> Hi! </h1>
-           <h2> My name is ${data.name} </h2>
+           <h1> My name is ${data.name} </h1>
            <h4> Currently @ ${data.company}</h4>
            <div class="links-nav"> 
               <div class="nav-link"> <a href="http://maps.google.com/?q=${data.location}"><i class="fas fa-location-arrow"></i> ${data.location}</a> </div>

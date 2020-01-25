@@ -58,13 +58,14 @@ function init() {
                 }
 
                 var htmlContent = genHTML.generateHTML(profileData);
-                var options = { format: 'Letter' };
-                pdfConverter.create(htmlContent, options).toFile(`./${response.username}-Profile.pdf`, function(err, res) {
+                var options = { "width": "8in" };
+                pdfConverter.create(htmlContent, options).toFile(`./${response.username}-Profile.pdf`, function (err, res) {
                     if (err) return console.log(err);
-                    console.log(res);
-                  });
-                //writeToFile("userProfile.html", htmlContent);
+                    // console.log(res);
+                    writeToFile("userProfile.html", htmlContent);
+                });
                 
+
             })
 
 
