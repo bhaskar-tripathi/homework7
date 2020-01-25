@@ -3,11 +3,8 @@ var inquirer = require("inquirer");
 var axios = require("axios");
 var fs = require("fs");
 var pdfConverter = require('html-pdf');
+var htmltopdf = require('htmltopdf');
 
-
-const questions = ["Whats your github ID?",
-    "Color of your profile?"
-];
 
 function writeToFile(fileName, htmlContent) {
     fs.writeFile(fileName, htmlContent, function (err) {
@@ -64,7 +61,18 @@ function init() {
                     // console.log(res);
                     writeToFile("userProfile.html", htmlContent);
                 });
-                
+
+                // const htmlToPDF = new HTMLToPDF(htmlContent);
+
+                // htmlToPDF.convert()
+                //     .then((buffer) => {
+                //         writeToFile("userProfile.html", buffer);
+                //     })
+                //     .catch((err) => {
+                //         console.log(err);
+                //     });
+
+
 
             })
 

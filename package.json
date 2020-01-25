@@ -18,7 +18,9 @@
   "homepage": "https://github.com/bhaskar-tripathi/homework7#readme",
   "dependencies": {
     "axios": "^0.19.2",
+    "fs": "0.0.1-security",
     "html-pdf": "^2.2.0",
+    "htmltopdf": "0.0.8",
     "inquirer": "^7.0.3"
   }
 }

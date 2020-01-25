@@ -80,6 +80,7 @@ function generateHTML(data) {
            }
            h4 {
            font-size: 1.5em;
+           text-align: center;
            }
            h5 {
            font-size: 1.3em;
@@ -106,6 +107,9 @@ function generateHTML(data) {
            border-radius: 50%;
            object-fit: cover;
            margin-top: -75px;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
            border: 6px solid ${colors[data.color].photoBorderColor};
            box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
            }
